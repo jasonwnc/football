@@ -26,7 +26,7 @@ with open('College Football Seasons 2014-2020.csv','r') as read_obj:
     		fieldnames = (fieldnames + ' ' + str(column_names[i]) + ' varchar(255) ')
     	i=i+1
         #end the loop
-        new_string = fieldnames.replace(".", "_")
+new_string = fieldnames.replace(".", "_")
 sql= (sqlval + new_string + ');')
 cursor.execute(sql)
 cnx.commit()
