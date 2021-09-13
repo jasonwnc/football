@@ -17,7 +17,7 @@ with open('College Football Seasons 2014-2020.csv','r') as read_obj:
         #loop here
     fieldnames=""
     i=1
-    while i < 332:
+    while i < len(column_names):
     #	print (".")
     	#print(str(column_names[i]))
     	fieldnames = (fieldnames + ' ' + str(column_names[i]) + ' varchar(255), ')
