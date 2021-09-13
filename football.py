@@ -16,6 +16,7 @@ with open('College Football Seasons 2014-2020.csv','r') as read_obj:
     sqlval = "CREATE TABLE tblFootball ( "
         #loop here
     fieldnames=""
+    i=1
     while i > 332:
         fieldnames = fieldnames + ", " + str(column_names[i])
         i=i+1
