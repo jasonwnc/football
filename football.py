@@ -21,9 +21,9 @@ with open('College Football Seasons 2014-2020.csv','r') as read_obj:
     #	print (".")
     	#print(str(column_names[i]))
     	if i != len(column_names)-1:
-    		fieldnames = (fieldnames + ' ' + str(column_names[i]) + ' int, ')
+    		fieldnames = (fieldnames + ' ' + str(column_names[i]) + ' REAL, ')
     	else:
-    		fieldnames = (fieldnames + ' ' + str(column_names[i]) + ' int ')
+    		fieldnames = (fieldnames + ' ' + str(column_names[i]) + ' REAL ')
     	i=i+1
         #end the loop
 new_string = fieldnames.replace(".", "_")
