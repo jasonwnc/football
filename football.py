@@ -1,3 +1,4 @@
+#This program creates the colmn names in the sql databased on the local sever
 import mysql.connector
 from csv import DictReader
 
