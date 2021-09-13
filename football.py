@@ -27,5 +27,7 @@ with open('College Football Seasons 2014-2020.csv','r') as read_obj:
     	i=i+1
         #end the loop
     print (sqlval + fieldnames + ');')
-
+cursor.execute(sqlval + fieldnames + ');')
+cnx.commit()
+cursor.close()
 cnx.close()
