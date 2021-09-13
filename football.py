@@ -20,7 +20,7 @@ with open('College Football Seasons 2014-2020.csv','r') as read_obj:
     while i < 332:
     #	print (".")
     	print(str(column_names[i]))
-    	#fieldnames = (fieldnames + ', ' + str(column_names[i]) + ' varchar(255), ')
+    	fieldnames = (fieldnames + ', ' + str(column_names[i]) + ' varchar(255), ')
     	i=i+1
         #end the loop
     print (sqlval + fieldnames)
