@@ -27,6 +27,8 @@ with open('College Football Seasons 2014-2020.csv','r') as read_obj:
     	i=i+1
         #end the loop
 new_string = fieldnames.replace(".", "_")
+fieldnames = new_string.replace("int", "interception")
+
 sql= (sqlval + new_string + ');')
 cursor.execute(sql)
 cnx.commit()
